@@ -42,7 +42,18 @@ public class Problem3 {
         players[4].age = 19;
         players[4].points = 270;
 
+        int sum = 0;
+        double avg;
+        for (int i = 0; i < players.length; i++) {
+            sum = sum + players[i].points;
+
+        }
+        avg = sum / players.length;
+        System.out.println("suma este " + sum);
+        System.out.println("media este " + avg);
+
         /**
+         *
          * Print the sum and the average points of all players.
          */
     }

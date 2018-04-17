@@ -1,5 +1,8 @@
 package com.sckeedoo.certification;
 
+import static java.lang.Math.max;
+import static java.lang.Math.random;
+
 public class Problem5 {
 
     static class Player {
@@ -42,10 +45,14 @@ public class Problem5 {
         players[4].age = 19;
         players[4].points = 270;
 
-        /**
-         * Increment the player's score by a random number between 10 and 20
-         */
-        for(Player player: players) {
+
+        int max = 20;
+        int min = 10;
+        for (Player player : players) {
+            System.out.println(player.points + (int) (Math.random() * ((max - min) + 1)) + min);
         }
+
+
     }
+
 }

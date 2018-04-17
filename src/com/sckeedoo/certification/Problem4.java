@@ -46,7 +46,9 @@ public class Problem4 {
          * Make all the players say hello and their name
          */
 
-        for(Player player: players) {
+        for (Player player : players) {
+
+            System.out.println("Hello, i am " + player.name);
         }
     }
 }
